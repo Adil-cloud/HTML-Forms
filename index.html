@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <div>
+            <label for="Username:">Full Name</label>
+            <input type="Username" name="name" id="Username" placeholder="Enter your full name">
+        </div>
+        <div>
+            <label for="Password">Enter Your Password</label>
+            <input type="Password" name="text" id="Password" placeholder="Enter your password">
+        </div>
+        <div>
+            <label for="Email Address">Email Address</label>
+            <input type="Email Address" name="text" id="Email Address" placeholder="xyz@gmail.com">
+        </div>
+        <div>
+            <label for="Phone Number">Phone Number</label>
+            <input type="Phone Number" name="text" id="Phone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <div>
+            <label for="bday">Birthday</label>
+            <input type="date" name="text" id="bday" >
+        </div>
+        <div>
+            <label for="Quantity">Quantity</label>
+            <input type="number" name="text" id="Quantity" value="1" min="1" max="99">
+        </div>
+        <label for="title">Title</label>
+        <div>
+            <label for="Mr">Mr</label>
+            <input type="radio" name="text" id="Mr">
+        </div>
+        <div>
+            <label for="Mrs">Mrs</label>
+            <input type="radio" name="text" id="Mrs">
+        </div>
+        <div>
+            <label for="Phd.">Phd.</label>
+            <input type="radio" name="text" id="Phd.">
+        </div>
+        <label for="Payment">Payment</label>
+        <select name="Payment" id="Payment">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="G-pay">G-pay</option>
+        </select>
+        <div>
+            <label for="Comments">Comments</label>
+            <textarea name="Comments" id="Comments" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="Subscribe">Subscribe</label>
+            <input type="checkbox" name="" id="Subscribe">
+        </div>
+        <div>
+            <label for="Upload">Upload</label>
+            <input type="file" name="Upload" id="Upload" accept="image/png, image/jpeg"><br>
+            <input type="button" value="Reset">
+            <input type="button" value="submit">
+    </form>
+</body>
+</html>
